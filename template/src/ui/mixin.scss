@@ -1,0 +1,99 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin ellipsis($line-clamp: 1) {
+  @if $line-clamp==1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+  }@else {
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    display: -webkit-box;
+    word-break: break-all;
+    line-clamp: $line-clamp;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@mixin placeholder-color($color: $font-gray) {
+  input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    @include font-style-14($color);
+  }
+  input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    @include font-style-14($color);
+  }
+  input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    @include font-style-14($color);
+  }
+  input::-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    @include font-style-14($color);
+  }
+}
+
+@mixin cannotSelected() {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+$font-black: #333;
+$font-dark: #666;
+$font-gray: #999;
+
+$font-size-20: 20px;
+$font-size-18: 18px;
+$font-size-12: 12px;
+
+@mixin font-style-20($color: $font-black, $weight: 700) {
+  font-size: $font-size-20;
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin font-style-18($color: $font-black, $weight: 500) {
+  font-size: $font-size-18;
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin font-style-12($color: $font-dark, $weight: 500) {
+  font-size: $font-size-12;
+  color: $color;
+  font-weight: $weight;
+}

@@ -1,0 +1,25 @@
+.setting-form {
+  width: 1000px;
+  .el-row {
+    width: 100%;
+  }
+  .el-form-item__content {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .el-input {
+    width: 203px;
+  }
+  .el-checkbox-group {
+    width: 480px;
+    margin: 0;
+    .el-checkbox {
+      width: 160px;
+      margin: 0;
+    }
+  }
+}
+.model-main {
+  padding: 0 200px;
+}

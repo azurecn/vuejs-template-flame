@@ -1,0 +1,34 @@
+@import "../variables.scss";
+
+// 改变主题色变量
+$--color-primary: $theme-color-1;
+$--color-default: $theme-color-2;
+
+// 改变 icon 字体路径变量，必需
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.el-tabs--border-card > .el-tabs__content {
+  padding: 0;
+}
+.el-table--enable-row-transition .el-table__body td {
+  padding: 2px 0;
+}
+.el-tabs__item {
+  height: 30px;
+  line-height: 30px;
+}
+
+.el-dialog__body{
+  padding: 10px 20px ;
+}
+.el-form-item__label {
+  line-height: 28px;
+}
+.el-form-item__content {
+  line-height: 28px;
+}
+.el-tree__empty-text {
+  width: 4em;
+}

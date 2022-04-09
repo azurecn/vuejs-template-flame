@@ -1,0 +1,64 @@
+// body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; font-family:PingFangSC-Regular, sans-serif; font-size:14px; color:#666; }
+// body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+// h1, h2, h3, h4, h5, h6{ font-size:100%; }
+// address, cite, dfn, em, var { font-style:normal; }
+// code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+// small{ font-size:12px; }
+// ul, ol { list-style:none; }
+// a { text-decoration:none; }
+// a:hover { text-decoration:underline; }
+// sup { vertical-align:text-top; }
+// sub{ vertical-align:text-bottom; }
+// legend { color:#000; }
+// fieldset, img { border:0; vertical-align:bottom; }
+// button, input, select, textarea { font-size:100%; }
+// table { border-collapse:collapse; border-spacing:0; }
+
+// 常用颜色
+$theme-gray-1: #666;						// 主要灰1
+$theme-gray-2: #C4C4C4;					// 主要灰2
+$theme-gray-3: #EFEFEF;					// 主要灰3
+$theme-white-1: #FFF;						// 主题白1
+
+// 常用颜色
+$theme-color-1: #D01F3C;				// 主题色2
+$theme-color-2: #F0C2EB;				// 主题色1
+
+// 字体颜色
+$font-color-1: #303133;					// 字体颜色1
+$font-color-2: #606266;					// 字体颜色2
+$font-color-3: #909399;					// 字体颜色3
+$font-color-4: #F0C2EB;					// 字体颜色4
+$font-color-5: #FFFFFF;					// 字体颜色4
+
+// 字体颜色
+$border-color-1: #DCDFE6;				// 字体颜色1
+$border-color-2: #E4E7ED;				// 字体颜色2
+$border-color-3: #EBEEF5;				// 字体颜色3
+$border-color-4: #F2F6FC;				// 字体颜色4
+
+// 背景颜色
+$bg-color-w: #FFF;						  // 背景白
+$bg-color-b: #000;						  // 背景黑
+$bg-color-t: Transparent;					// 背景透明
+
+// 边距大小
+$spacing-mini: 2px; 						  // 边距-迷你
+$spacing-small: 5px; 					    // 边距-小
+$spacing-normal: 8px;					    // 边距-正常
+$spacing-medium: 10px; 				    // 边距-中
+$spacing-large: .5rem; 					  // 边距-大
+
+// 圆角大小
+$rounded-corner-mini: 1px; 	 	    // 圆角-迷你
+$rounded-corner-small: 2px; 	 	  // 圆角-小
+$rounded-corner-normal: 5px; 	    // 圆角-正常
+$rounded-corner-medium: 10px; 	  // 圆角-中
+$rounded-corner-large: 20px; 	    // 圆角-大
+
+// 字号
+$font-size-mini: 10px;					  // 字号-迷你
+$font-size-small: 12px;				    // 字号-小
+$font-size-normal: 15px;				  // 字号-正常
+$font-size-medium: 18px;				  // 字号-中
+$font-size-large: 20px;				    // 字号-大
