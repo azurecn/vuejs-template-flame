@@ -69,11 +69,6 @@ module.exports = {
         },
       ],
     },
-    router: {
-      when: 'isNotTest',
-      type: 'confirm',
-      message: 'Install vue-router?',
-    },
     runner: {
       when: 'isNotTest && unit',
       type: 'list',
